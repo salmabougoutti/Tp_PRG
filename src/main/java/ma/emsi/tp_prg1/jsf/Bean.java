@@ -10,8 +10,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
- * @author M2B PRO
+ @NAMED pour indiquer à Jakarta EE que cette classe est un bean géré et peut être injectée dans d'autres composants JSF.
+ * L'annotation @RequestScoped indique que le cycle de vie de ce bean est limité à la requête HTTP actuelle.
+
+
  */
 @Named(value = "bean")
 @RequestScoped
@@ -38,4 +40,7 @@ public class Bean {
     public String afficher() {
     return "affichage_3?nb="+ nombre + "&amp;faces-redirect=true";
 }
+  /* cette méthode génère une liste de nombres qui suit la valeur actuelle de nombre 
+en commençant par nombre et en ajoutant les nombres suivants jusqu'à nombre + nb.
+La liste générée est ensuite renvoyée pour être utilisée dans d'autres parties de l'application.  */  
 }

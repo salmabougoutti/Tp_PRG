@@ -4,7 +4,7 @@
       xmlns:h="jakarta.faces.html"
       xmlns:ui="jakarta.faces.facelets">
      <h:head>
-        <title>Application&gt;affichage_1</title>
+         <title>Application&gt;affichage_1</title> <!-- le symbole &gt; est utilisé pour représenter le caractère > dans le texte "Application>formulaire_1". -->
     </h:head>
 
     <h:body>
@@ -17,3 +17,7 @@
         <h:link outcome="formulaire_1" value="Saisir un autre nombre"/>
     </h:body>
 </html>
+<!-- Lorsque l'utilisateur saisit quelque chose dans le champ de texte et soumet le formulaire, la valeur
+saisie est automatiquement liée à la propriété nombre de l'objet Bean. -->
+<!-- <ui:repeat> est une balise JSF utilisée pour répéter le contenu en fonction d'une collection de données. Dans ce cas, la propriété nombresSuivants de l'objet bean est utilisée comme source de données. Pour chaque élément n dans nombresSuivants, l'expression #{n+1} est affichée,
+  suivie d'une virgule (,) si ce n'est pas le dernier élément de la collection. -->
