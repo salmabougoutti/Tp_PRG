@@ -1,6 +1,6 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/JSF/JSFManagedBean.java to edit this template
  */
 package ma.emsi.tp_prg1.jsf;
 
@@ -9,6 +9,10 @@ import jakarta.inject.Named;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ *
+ * @author M2B PRO
+ */
 @Named(value = "bean")
 @RequestScoped
 public class Bean {
