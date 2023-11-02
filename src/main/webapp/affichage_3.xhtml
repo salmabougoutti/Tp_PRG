@@ -4,17 +4,17 @@
       xmlns:h="jakarta.faces.html"
       xmlns:ui="jakarta.faces.facelets">
      <h:head>
-        <title>Application&gt;affichage_2</title>
+        <title>Application&gt;affichage_3</title>
     </h:head>
 
     <h:body>
-        <h1>Application&gt;affichage_2</h1>
+        <h1>Application&gt;affichage_3</h1>
         Les nombres : <br/>
         <ui:repeat value="#{bean.nombresSuivants}" var="n" varStatus="status">
             #{n + 1}#{! status.last ? ', ' : ''}
         </ui:repeat>
         <h:form>
-            <h:commandLink action="formulaire_2" value="Saisir un autre nombre"/>
+            <h:commandLink action="formulaire_3" value="Saisir un autre nombre"/>
         </h:form>
     </h:body>
 </html>
