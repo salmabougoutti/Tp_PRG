@@ -37,11 +37,7 @@ public class Bean2 {
         return l;
     }
      public String afficher() {
-        if (nombre == 0) {
-            return "affichage_4.xhtml?nb=0&amp;faces-redirect=true";
-        } else {
-            return "affichage_4.xhtml?nb=" + nombre + "&amp;faces-redirect=true";
-        }
-    }
+    return "affichage_4?nb="+ nombre + "&amp;faces-redirect=true";
+}
     
 }
