@@ -9,10 +9,7 @@ import jakarta.inject.Named;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author M2B PRO
- */
+
 @Named(value = "bean2")
 @RequestScoped
 public class Bean2 {
