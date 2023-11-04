@@ -3,6 +3,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="jakarta.faces.html"
       xmlns:f="jakarta.faces.core">
+    <f:metadata>
+         <f:viewParam name="nb" value="#{bean2.nombre}"/>
+     </f:metadata>
     <h:head>
         <title>Application&gt;formulaire_4</title>
     </h:head>
@@ -15,8 +18,6 @@
         <h:inputText id="nombre" value="#{bean2.nombre}"/>
         <h:commandButton value="Valider" action="#{bean2.afficher()}"/>
       </h:form>
-     <f:metadata>
-         <f:viewParam name="nb" value="#{bean2.nombre}"/>
-     </f:metadata>
+     
     </h:body>
 </html>
